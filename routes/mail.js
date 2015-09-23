@@ -27,7 +27,7 @@ router.post('/', function(req, res, next){
 
   mailgun.messages().send(data, function (error, body) {
     if(!error){
-      res.redirect('/')
+      res.render('success')
     } else {
       res.render('error' , {message: 'Algo esta roto. No te preocupes, intentemoslo mas tarde por favor !'})
       console.log(error);
