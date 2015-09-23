@@ -22,7 +22,7 @@ router.post('/', function(req, res, next){
     '<p>Deseado en el diseño : </p><p><b>' + req.body.q7 + '</b></p>'+
     '<p>Evitar en el diseño : </p><p><b>' + req.body.q8 + '</b></p>'+
     '<p>Paginas de referencia : </p><p><b>' + req.body.q9 + '</b></p>'+
-    '<p>Colores de preferencia : <b>' + req.body.colorListOne +' '+ req.body.colorListTwo + '</p>'
+    '<p>Colores de preferencia : <b>' + req.body.colorList + '</p>'
   };
 
   mailgun.messages().send(data, function (error, body) {
