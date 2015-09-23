@@ -1,11 +1,13 @@
 (function(){
   'use strict';
 
-  var express = require('express'),
-      path    = require('path'),
-      app     = express();
+  var express    = require('express'),
+      path       = require('path'),
+      app        = express(),
+      bodyParser = require('body-parser');
 
   var routes = require('./routes/index');
+  var mail = require('./routes/mail');
 
   var port = process.env.PORT || 3000;
 
@@ -14,10 +16,14 @@
 
   app.use(express.static(path.join(__dirname, 'public')));
 
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: false }));
+
   app.use('/', routes);
+  app.use('/mail', mail);
 
   app.use(function(req, res, next) {
-    var err = new Error('Parece que estas perdido.');
+    var err = new Error('Creo que estas buscando en otra direccion.');
     err.status = 404;
     next(err);
   });

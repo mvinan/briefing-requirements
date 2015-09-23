@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/mvinan/briefing-requirements#readme",
   "dependencies": {
+    "body-parser": "^1.14.0",
     "express": "^4.13.3",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mailgun-js": "^0.7.1",
+    "nodemailer": "^1.4.0"
   },
   "devDependencies": {
     "clean-css": "^3.4.3",
