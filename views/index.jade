@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div.container
+    div(id="fs-form-wrap" class="fs-form-wrap")
+      div(class="fs-title")
+        h1= title
+      form(id="myform", class="fs-form fs-form-full", autocomplete="off")
+        ol.fs-fields
+          li
+            label(class="fs-field-label fs-anim-upper", for="q1") Cual es tu nombre ?
+            input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Miguel Alejandro" required)
+          li
+            label(class="fs-field-label fs-anim-upper", for="q1") Cual es la dirección de tu e-mail?
+            input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="hola@noggalito.com" required)
+          li(data-input-trigger)
+            label(class="fs-field-label fs-anim-upper" for="q3" data-info="Esto nos ayudara a saber que tipo de servicio nececitas") Cual es la prioridad para tu nuevo sitio web?
+            div(class="fs-radio-group fs-radio-custom clearfix fs-anim-lower")
+              span
+                input(id="q3a" name="q3" type="radio" value="conversion")
+                label(for="q3a" class="radio-social") Mostrar información
+              span
+                input(id="q3b" name="q3" type="radio" value="conversion")
+                label(for="q3b" class="radio-conversion") Vender cosas
+              span
+                input(id="q3c" name="q3" type="radio" value="conversion")
+                label(for="q3c" class="radio-mobile") Algo más complejo
