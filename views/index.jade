@@ -11,20 +11,60 @@ block content
             label(class="fs-field-label fs-anim-upper", for="q1") Cual es tu nombre ?
             input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Miguel Alejandro" required)
           li
-            label(class="fs-field-label fs-anim-upper", for="q1") Cual es la dirección de tu e-mail?
-            input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="hola@noggalito.com" required)
+            label(class="fs-field-label fs-anim-upper", for="q2") Cual es la dirección de tu e-mail?
+            input(class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="hola@noggalito.com" required)
           li
-            label(class="fs-field-label fs-anim-upper", for="q1") Nombre de tu Proyecto?
-            input(class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Blog de Miguel" required)          
+            label(class="fs-field-label fs-anim-upper", for="q3") Nombre de tu Proyecto?
+            input(class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="Blog de Miguel" required)          
           li(data-input-trigger)
-            label(class="fs-field-label fs-anim-upper" for="q3" data-info="Esto nos ayudara a saber que tipo de servicio nececitas") Cual es la prioridad para tu nuevo sitio web?
+            label(class="fs-field-label fs-anim-upper" for="q4" data-info="Esto nos ayudara a saber que tipo de servicio nececitas") Cual es la prioridad para tu nuevo sitio web?
             div(class="fs-radio-group fs-radio-custom clearfix fs-anim-lower")
               span
-                input(id="q3a" name="q3" type="radio" value="conversion")
-                label(for="q3a" class="radio-social") Mostrar información
+                input(id="q4a" name="q4" type="radio" value="conversion")
+                label(for="q4a" class="radio-social") Mostrar información
               span
-                input(id="q3b" name="q3" type="radio" value="conversion")
-                label(for="q3b" class="radio-conversion") Vender cosas
+                input(id="q4b" name="q4" type="radio" value="conversion")
+                label(for="q4b" class="radio-conversion") Vender cosas
               span
-                input(id="q3c" name="q3" type="radio" value="conversion")
-                label(for="q3c" class="radio-mobile") Algo más complejo
+                input(id="q4c" name="q4" type="radio" value="conversion")
+                label(for="q4c" class="radio-mobile") Algo más complejo
+          li
+            label(class="fs-field-label fs-anim-upper", for="q5" data-info="Porfavor coloca el target objetivo que tu producto/empresa desea atraer") Cual es tu target o audencia objetiva?
+            input(class="fs-anim-lower" id="q5" name="q5" type="text" placeholder="mujeres, consumidores…" required) 
+          li
+            label(class="fs-field-label fs-anim-upper", for="q6" data-info="Describa el producto o servicio que su empresa ofrece") Que producto o servicio ofrece la empresa?
+            input(class="fs-anim-lower" id="q6" name="q6" type="text" placeholder="libros, autos, proyectos" required) 
+          li
+            label(class="fs-field-label fs-anim-upper", for="q7" data-info="Lo que su diseño deberá tener? Especial lema? Estilo? Sea especifico en esta parte porfavor") Que deseas en tu diseño?
+            textarea(class="fs-anim-lower" id="q7" name="q7" type="textarea" placeholder="describe la imagen de tu sitio web") 
+          li
+            label(class="fs-field-label fs-anim-upper", for="q8" data-info="Que deberiamos evitar que no te guste para el diseño") Que deseas evitar en tu diseño?
+            textarea(class="fs-anim-lower" id="q8" name="q8" type="textarea" placeholder="describe lo que vamos a evitar en el diseño")
+          li
+            label(class="fs-field-label fs-anim-upper", for="q9" data-info="coloca el enlace de alguna pagina web que te guste efectos, diseño, menus etc..") Paginas de referencia
+            textarea(class="fs-anim-lower" id="q9" name="q9" type="textarea" placeholder="Coloca paginas de referencia aqui")
+          li(data-input-trigger)
+            label(class="fs-field-label fs-anim-upper", for="q10" data-info="Ayudanos eligiendo el color que cres que representa a tu empresa") Color que te gustaria en tu sitio?
+            select(class="cs-select cs-skin-boxes fs-anim-lower")
+              option(value="" disabled selected) Escoge un color
+              option(value="#588c75" data-class="color-588c75") #588c75
+              option(value="#b0c47f" data-class="color-b0c47f") #b0c47f
+              option(value="#f3e395" data-class="color-f3e395") #f3e395
+              option(value="#f3ae73" data-class="color-f3ae73") #f3ae73
+              option(value="#da645a" data-class="color-da645a") #da645a
+              option(value="#79a38f" data-class="color-79a38f") #79a38f
+              option(value="#c1d099" data-class="color-c1d099") #c1d099
+              option(value="#f5eaaa" data-class="color-f5eaaa") #f5eaaa
+              option(value="#f5be8f" data-class="color-f5be8f") #f5be8f
+              option(value="#e1837b" data-class="color-e1837b") #e1837b
+              option(value="#9bbaab" data-class="color-9bbaab") #9bbaab
+              option(value="#d1dcb2" data-class="color-d1dcb2") #d1dcb2
+              option(value="#f9eec0" data-class="color-f9eec0") #f9eec0
+              option(value="#f7cda9" data-class="color-f7cda9") #f7cda9
+              option(value="#e8a19b" data-class="color-e8a19b") #e8a19b
+              option(value="#bdd1c8" data-class="color-bdd1c8") #bdd1c8
+              option(value="#e1e7cd" data-class="color-e1e7cd") #e1e7cd
+              option(value="#faf4d4" data-class="color-faf4d4") #faf4d4
+              option(value="#fbdfc9" data-class="color-fbdfc9") #fbdfc9
+              option(value="#f1c1bd" data-class="color-f1c1bd") #f1c1bd
+        button(class="fs-submit" type="submit") Enviar respuestas
